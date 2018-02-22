@@ -1,0 +1,90 @@
+<!-- Heading -->
+<!-- <div class="row text-center">
+    <div class="container">
+        <h2 class="section-heading">User Registration</h2>
+        <h3 class="section-subheading text-muted">Please enter your registration information.</h3>
+    </div>
+</div> -->
+<!-- Heading -->
+
+<!-- Main Section -->
+<!-- <section id="contact">
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12"> -->
+                <div>
+                    <h1>User Login</h1>
+                </div>
+                <form ng-submit="main.doLogin(loginData);">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div>
+                                    <!-- First Name Input -->
+                                    <label>Username:</label>
+                                    <input  class="form-control" type="text" name="firstName" placeholder="User Name *" ng-model="main.loginData.username" >
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div>
+                                    <!-- Last Name Input -->
+                                    <label>Passsword:</label>
+                                    <input   class="form-control" type="text" name="lastName" placeholder="Password" ng-model="main.loginData.password" >
+                                    <!-- Last Name Validation -->
+                                     
+                                </div>
+                            </div>
+                        </div>
+                       
+                         
+                         
+                         
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-left">
+                            <div id="success"></div>
+                            <!-- Login Button -->
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                    <br>
+                     
+                    <div class="panel-footer ">
+                             Don't have an account! <a href="/register" onClick=""> Sign Up Here </a>
+                    </div>
+                
+                </form>
+           <!--  </div>
+        </div> -->
+
+        <br>
+          <div class="jumbotron text-center" ng-show="main.loading">
+            <span class="glyphicon glyphicon-repeat spinner"></span>
+            <p>Loading....</p>
+        </div>
+        <br>
+            <div class="row show-hide-message" ng-show="main.successMsg">
+                <div class="alert alert-success">{{main.successMsg}}</div>
+            </div>
+            <br>
+            <div class="row show-hide-message" ng-show="main.errorMsg">
+                <div class="alert alert-danger">{{main.errorMsg}}</div>
+            </div>
+        
+        <!-- Loading Icon (Bootstrap) -->
+
+        <!-- Custom Messages -->
+    <!--     <div class="row show-hide-message" ng-show="register.successMsg || register.errorMsg">
+            <div ng-class="alert">{{ register.successMsg || register.errorMsg }}</div>
+        </div> -->
+       
+
+    <!-- </div> -->
+    <!-- End of Container -->
+<!-- </section>
+ --><!-- Main Section /-->

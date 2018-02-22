@@ -1,0 +1,66 @@
+<!-- <div>
+	<table class ="table">
+	<thead>
+      <tr>
+        <th>QR</th>
+        <th>User Name</th>
+        <th>IP</th>
+        <th>Device Mac</th>
+        <th>Logged In</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat = "show in showdata">
+        <td>{{show.QID}}</td>
+        <td>{{show.uname}}</td>
+        <td>{{show.DeviceGeo}}</td>
+        <td>{{show.DeviceId}}</td>
+        <td>{{show.LoggedIn}}</td>
+        <td>{{show.UserLat}}</td>
+        <td>{{show.UserLong}}</td>
+
+      </tr>
+</table>
+</div>
+
+ -->
+
+     <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+<div class="table-responsive">
+  <table class="table table-striped">
+  <caption ><strong>Product Tracking Table</strong></caption>
+     <tr>
+    <th>QR</th>
+        <th>User Name</th>
+        <th>IP</th>
+        <th>Device Mac</th>
+        <th>Logged In</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+    
+  </tr>
+ <tr ng-repeat = "show in showdata">
+        <td>{{show.QID}}</td>
+        <td>{{show.uname}}</td>
+        <td>{{show.DeviceGeo}}</td>
+        <td>{{show.DeviceId}}</td>
+        <td>{{show.LoggedIn}}</td>
+        <td>{{show.UserLat}}</td>
+        <td>{{show.UserLong}}</td>
+
+      </tr>
+
+  </table>
+
+</div>
+          </div>
+
+        </div>
+      </div>
+     </section>

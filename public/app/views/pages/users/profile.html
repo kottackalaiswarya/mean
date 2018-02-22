@@ -1,0 +1,22 @@
+                <div class="container">
+        <div class="row">
+          <div class="col-md-4" ng-show = "main.isLoggedIn && main.authorized">
+            <img src="assets/img/gen.png" class="demo">
+            <h2>QR Code</h2>
+            <p>Generate a batch of 10 qr codes and option for payment gateway</p>
+              <button type = "submit" ng-click="profile.batpay();" class="btn btn-success">Click here</button>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/sc.jpg" class="demo">
+            <h2>Scanner</h2>
+            <p>Mobile Scanner to scan the QR Codes and get the product details attached to it.</p>
+             <button class="btn btn-success" type = "submit" ng-click="profile.scan();">Click here</button>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/track.jpg" class="demo">
+            <h2> Tracker</h2>
+            <p>Tracker application to track the whereabout of the product & to display the hierarchy </p>
+           <button class="btn btn-success" type = "submit" ng-click="profile.view();">Click here</button>
+          </div>
+        </div>
+      </div>

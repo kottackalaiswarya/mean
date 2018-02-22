@@ -1,0 +1,82 @@
+<!-- Heading -->
+<div class="row text-center">
+    <div class="container">
+        <h2 class="section-heading">Profile</h2>
+        <h3 class="section-subheading text-muted">This page allows you to view your user profile.</h3>
+    </div>
+</div>
+<!-- Heading -->
+
+<div class="panel panel-info">
+
+    <!-- Default panel contents -->
+    <div class="panel-heading" style="text-align: center;"><strong>User Profile</strong></div>
+
+    <!-- Table -->
+    <!-- <table class="table">
+        <tr>
+            <td><strong>Username</strong></td>
+            <td><strong>Email Address</strong></td>
+            <td><strong>Password</strong></td>
+        </tr>
+        <tr>
+            <td>{{ main.username }}</td>
+            <td>{{ main.useremail }}</td>
+            <td>****************</td>
+        </tr>
+    </table> -->
+
+    <div class="row">
+        <div class="big-box">
+          <div class="col-lg-12">
+          
+            <div class="col-md-4" ng-show = "main.isLoggedIn && main.authorized">
+              <div class="box-bg">
+                <div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.9s">
+                  <div class="align-center">
+                    <i class="fa fa-qrcode fa-5x"></i>
+                    <h4 class="text-bold">QR Code</h4>
+                    <p>Generate batch of qr codes and payment gateway
+
+                    </p>
+ 
+                      <button type = "submit" ng-click="profile.batpay();" class="btn btn-success">Click here</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="box-bg">
+                <div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.6s">
+                  <div class="align-center">
+                    <i class="fa fa-print fa-5x"></i>
+                    <h4 class="text-bold">Scanner</h4>
+                    <p>Mobile Scanner to scan the QR Codes and get the product details attached to it.
+                    </p>
+                    <button class="btn btn-success" type = "submit" ng-click="profile.scan();">Click here</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box-bg">
+                <div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+                  <div class="align-center">
+                    <i class="fa fa-truck -o fa-5x"></i>
+                    <h4 class="text-bold">Tracker</h4>
+                    <p>Tracker application to track the whereabout of the product
+                    </p>
+                    <button class="btn btn-success" type = "submit" ng-click="profile.view();">Click here</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+</div>
